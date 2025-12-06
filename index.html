@@ -194,9 +194,9 @@ Forecasting:** Predicting how much electricity the city will need tomorrow based
                 <div class="w-full h-2 bg-gray-700 rounded-full mb-8 overflow-hidden neon-glow-border">
                     <div id="quiz-progress-bar" class="h-full rounded-full transition-all duration-700 ease-out" style="width: 0%; background-color: var(--neon-blue);"></div>
                 </div>
-  <div class="content-block" id="quiz-container">
+
+                <div class="content-block" id="quiz-container">
                     
-                    <!-- Q1 -->
                     <div class="question-block mb-6 hidden" id="q1"> 
                         <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">1. What is the name for the network of everyday objects (like sensors and cameras) connected to the internet?</h4>
                         <div class="space-y-3">
@@ -204,7 +204,6 @@ Forecasting:** Predicting how much electricity the city will need tomorrow based
                             <button onclick="checkAnswer(this, true, 1)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">(IoT) Internet of Things</button>
                         </div>
                     </div>
-                    <!-- Q2 -->
                     <div class="question-block mb-6 hidden" id="q2">
                         <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">2. Which city built a 3D virtual copy of itself, known as the "Digital Twin," for testing and planning?</h4>
                         <div class="space-y-3">
@@ -212,8 +211,7 @@ Forecasting:** Predicting how much electricity the city will need tomorrow based
                             <button onclick="checkAnswer(this, false, 2)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Pune</button>
                         </div>
                     </div>
-                     <!-- Q3 (From Timeline) -->
-                    <div class="question-block mb-6 hidden" id="q3">
+                     <div class="question-block mb-6 hidden" id="q3">
                         <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">3. London shares its real-time transport data for free. What is the main benefit of this "Open Data" policy?</h4>
                         <div class="space-y-3">
                             <button onclick="checkAnswer(this, false, 3)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">It lowers the price of bus tickets.</button>
@@ -221,8 +219,7 @@ Forecasting:** Predicting how much electricity the city will need tomorrow based
                             <button onclick="checkAnswer(this, false, 3)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">It automatically fixees potholes in roads.</button>
                         </div>
                     </div>
-                     <!-- Q4 (From Page 1 & 3) -->
-                    <div class="question-block mb-6 hidden" id="q4">
+                     <div class="question-block mb-6 hidden" id="q4">
                         <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">4. What is the name of the central room that acts as the "digital brain" and monitors all city services (especially in Pune)?</h4>
                         <div class="space-y-3">
                             <button onclick="checkAnswer(this, false, 4)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Digital Control Unit (DCU)</button>
@@ -230,8 +227,7 @@ Forecasting:** Predicting how much electricity the city will need tomorrow based
                             <button onclick="checkAnswer(this, false, 4)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Predictive Modeling Lab (PML)</button>
                         </div>
                     </div>
-                     <!-- Q5 (From Page 3 Applications) -->
-                    <div class="question-block mb-6 hidden" id="q5">
+                     <div class="question-block mb-6 hidden" id="q5">
                         <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">5. When a system uses past data to guess what will happen (like predicting a traffic jam or a pipe break), what is this called?</h4>
                         <div class="space-y-3">
                             <button onclick="checkAnswer(this, false, 5)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Generative AI</button>
@@ -239,17 +235,17 @@ Forecasting:** Predicting how much electricity the city will need tomorrow based
                             <button onclick="checkAnswer(this, false, 5)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Narrow AI</button>
                         </div>
                     </div>
-                      <div id="result-screen" class="hidden text-center py-6">
-                        <i class="fas fa-brain text-4xl md:text-5xl text-[var(--neon-blue)] mb-4 neon-glow-text"></i>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-2 text-white font-[Rajdhani] uppercase">QUIZ OVER!</h3>
-                        <p class="text-xl md:text-2xl text-gray-300 mb-6">Your Score: <span id="final-score" class="font-bold">0</span> / 5</p>
-                        <button onclick="location.reload()" class="bg-[var(--neon-pink)] text-white font-bold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(188,19,254,0.6)] transition">
-                            Start Again
-                        </button>
-                    </div>
+                </div> <div id="result-screen" class="hidden text-center py-6">
+                    <i class="fas fa-brain text-4xl md:text-5xl text-[var(--neon-blue)] mb-4 neon-glow-text"></i>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-2 text-white font-[Rajdhani] uppercase">QUIZ OVER!</h3>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-6">Your Score: <span id="final-score" class="font-bold">0</span> / 5</p>
+                    <button onclick="location.reload()" class="bg-[var(--neon-pink)] text-white font-bold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(188,19,254,0.6)] transition">
+                        Start Again
+                    </button>
+                  </div>
                 </div>
             </section>
-        </section>
+         </section>
  <footer class="text-center mt-16 text-gray-700 text-xs md:text-sm">
             <p>Monolith V5 // Cyber Sync Module</p>
         </footer>

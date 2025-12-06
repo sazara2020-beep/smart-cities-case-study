@@ -118,6 +118,10 @@ mark {
     opacity: 0.8;
     pointer-events: none;
 }
+/*NEW FIX FOR INITIAL HIDING STATE*/
+.question-block.hidden,#result-screen.hidden{
+    display: none !important;
+}
 #final-score {
     font-size: 3rem;
     font-family: 'Rajdhani', sans-serif;

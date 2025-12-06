@@ -182,3 +182,6 @@ window.onload = function () {
     updateQuizProgressBar(); // Initial quiz bar setup (0%)
     showQuestion(1); // Start the quiz
 };
+
+
+//634 
