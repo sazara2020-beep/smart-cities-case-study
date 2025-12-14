@@ -29,6 +29,7 @@
             <div class="flex space-x-3 md:space-x-6 text-xs md:text-base">
                 <a href="#intro" class="nav-link">Smart cities?</a>
                 <a href="#timeline" class="nav-link">Case study</a>
+                <a href="#dataprivacy" class="nav-link">Data Ethics</a>
                 <a href="#applications" class="nav-link">IoT and Data</a>
             </div>
         </div>
@@ -153,8 +154,60 @@
             </div>
         </section>
 
+        <!--things these smart cities did 4 data privacy-->
+        <!-- ============================================== -->
+        <!-- PAGE 3: DATA ETHICS  (#workofDataEthcs) -->
+        <!-- ============================================== -->
+
+        <section id="dataprivacy" class="pt-10">
+            <header class="text-center pt-10 pb-8">
+                <h1 class="ai-title font-bold text-[var(--neon-pink)] neon-glow-text">
+                    DATA ETHICS IN SMART CITIES
+                </h1>
+                <p class="text-gray-400 text-sm md:text-lg mt-2">How London, Pune, and Singapore Protect Privacy</p>
+            </header>
+
+            <div class="content-block">
+                <h2 class="ai-section-title font-bold pl-3 mb-4 text-[var(--neon-blue)]">🇬🇧 London: Transparency & GDPR</h2>
+                <p class="text-gray-300 mb-4">
+                    London relies on strict European laws (GDPR) to set high standards for data use.
+                </p>
+                <ul class="list-disc list-inside space-y-2 pl-4 text-gray-300">
+                    <li><b>Openness:</b> The city uses the <u>London Privacy Register</u> to show the public how their data collection projects are assessed.</li>
+                    <li><b>Privacy Notices:</b> When data is collected, citizens must be given a <u>privacy notice</u> explaining <b>why?</b> the data is being collected and where it is stored.</li>
+                    <li><b>Legal Backbone:</b> All data processing follows the rules set by the GDPR and the Data Protection Act 2018.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h2 class="ai-section-title font-bold pl-3 mb-4 text-[var(--neon-pink)]">🇮🇳 Pune: Anonymization & Governance</h2>
+                <p class="text-gray-300 mb-4">
+                    Pune focuses on structuring how data is managed and protecting individual identities before sharing data publicly.
+                </p>
+                <ul class="list-disc list-inside space-y-2 pl-4 text-gray-300">
+                    <li><b> Data:</b> All personal data must be **anonymized** (made unidentifiable) before being published on open platforms.</li>
+                    <li><b> Data Roles:</b> They appoint a **City Data Officer (CDO)** to oversee and ensure all privacy norms are followed.</li>
+                    <li>Data is placed into different categories like <b>Personal data</b> or <b>Protected Data</b>, with specific rules for access and sharing for each type.</li>
+                </ul>
+            </div>
+            
+            <div class="content-block">
+                <h2 class="ai-section-title font-bold pl-3 mb-4 text-[var(--neon-blue)]">🇸🇬 Singapore: Accountability & Design</h2>
+                <p class="text-gray-300 mb-4">
+                    Singapore emphasizes built-in safety measures and shifting the responsibility to the organizations that handle the data.
+                </p>
+                <ul class="list-disc list-inside space-y-2 pl-4 text-gray-300">
+                    <li><b>Accountability:</b> The law (PDPA) ensures organizations are primarily responsible for protecting the data they collect.</li>
+                    <li><b>Consent:</b> Obtaining <b>informed consent</b> is critical, giving individuals control over their own information.</li>
+                    <li><b>Privacy by Design (PBD):</b>Privacy protection measures, such as processing data locally using <b><abbr title="processing data close to where it is collected (ex: on a sensor or local server) instead of sending it to a distant cloud server">edge computing</abbr></b> (which lowers security risks), are integrated directly into the technology from the start.</li>
+                </ul>
+            </div>
+        </section>
+        
+
+
           <!-- ============================================== -->
-        <!-- PAGE 3: CREATIVE APPLICATIONS & QUIZ (#applications) -->
+        <!-- PAGE 4: CREATIVE APPLICATIONS & QUIZ (#applications2) -->
         <!-- ============================================== -->
         <section id="applications">
             <header class="text-center pt-10 pb-8">
@@ -197,26 +250,26 @@ Forecasting:** Predicting how much electricity the city will need tomorrow based
 
                 <div class="content-block" id="quiz-container">
                     
-                    <div class="question-block mb-6 hidden" id="q1"> 
+                    <div class="question-block mb-6 hidden" id="q1"> <!-- ques frm IoT and data-->
                         <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">1. What is the name for the network of everyday objects (like sensors and cameras) connected to the internet?</h4>
                         <div class="space-y-3">
                             <button onclick="checkAnswer(this, false, 1)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Digital twin</button>
                             <button onclick="checkAnswer(this, true, 1)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">(IoT) Internet of Things</button>
                         </div>
                     </div>
-                    <div class="question-block mb-6 hidden" id="q2">
+                    <div class="question-block mb-6 hidden" id="q2"> <!-- ques frm Case Study-->
                         <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">2. Which city built a 3D virtual copy of itself, known as the "Digital Twin," for testing and planning?</h4>
                         <div class="space-y-3">
                             <button onclick="checkAnswer(this, true, 2)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Singapore</button>
                             <button onclick="checkAnswer(this, false, 2)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Pune</button>
                         </div>
                     </div>
-                     <div class="question-block mb-6 hidden" id="q3">
-                        <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">3. London shares its real-time transport data for free. What is the main benefit of this "Open Data" policy?</h4>
+                     <div class="question-block mb-6 hidden" id="q3"> <!--ques frm Data Ethics-->
+                        <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">3.London uses the _____________________ to show the public how their data collection projects are assessed.</h4>
                         <div class="space-y-3">
-                            <button onclick="checkAnswer(this, false, 3)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">It lowers the price of bus tickets.</button>
-                            <button onclick="checkAnswer(this, true, 3)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">App developers build better apps for people.</button>
-                            <button onclick="checkAnswer(this, false, 3)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">It automatically fixees potholes in roads.</button>
+                            <button onclick="checkAnswer(this, false, 3)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">ERP 2.0.</button>
+                            <button onclick="checkAnswer(this, true, 3)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">London Privacy Register.</button>
+                            <button onclick="checkAnswer(this, false, 3)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Integrated Command & Control Center.</button>
                         </div>
                     </div>
                      <div class="question-block mb-6 hidden" id="q4">
@@ -228,7 +281,7 @@ Forecasting:** Predicting how much electricity the city will need tomorrow based
                         </div>
                     </div>
                      <div class="question-block mb-6 hidden" id="q5">
-                        <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">5. When a system uses past data to guess what will happen (like predicting a traffic jam or a pipe break), what is this called?</h4>
+                        <h4 class="text-lg md:text-xl font-bold mb-4 text-[var(--neon-pink)]">5. When a system uses past data to guess what will happen(like predicting traffic jams and pipe leakage etc..), what is this called?</h4>
                         <div class="space-y-3">
                             <button onclick="checkAnswer(this, false, 5)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Generative AI</button>
                             <button onclick="checkAnswer(this, true, 5)" class="option-btn w-full text-left p-3 rounded-lg hover:border-white">Predictive AI</button>
