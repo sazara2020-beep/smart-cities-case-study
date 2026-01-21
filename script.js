@@ -184,4 +184,67 @@ window.onload = function () {
 };
 
 
-//634 finally i did it!!!
+function decodeEffect() {
+    const elements = document.querySelectorAll('.decode-text');
+    
+    elements.forEach(el => {
+        const originalText = el.innerText;
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+        let iteration = 0;
+        
+        const interval = setInterval(() => {
+            el.innerText = originalText.split("")
+                .map((letter, index) => {
+                    if(index < iteration) return originalText[index];
+                    return chars[Math.floor(Math.random() * chars.length)];
+                })
+                .join("");
+            
+            if(iteration >= originalText.length) clearInterval(interval);
+            iteration += 1 / 3;
+        }, 30);
+    });
+}
+
+// Run it when the page loads
+window.addEventListener('load', decodeEffect);
+
+//allalallalla JS PRT
+// SYSTEM BOOT LOADER
+function bootSystem() {
+    const loader = document.getElementById('boot-loader');
+    const progress = document.getElementById('boot-progress');
+    let width = 0;
+    
+    const interval = setInterval(() => {
+        width += Math.random() * 30; // Randomly jumps for "hacker" feel
+        if (width >= 100) {
+            width = 100;
+            clearInterval(interval);
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => loader.remove(), 1000); // Remove from DOM after fade
+            }, 500);
+        }
+        progress.style.width = width + '%';
+    }, 200);
+}
+
+// Update your window.onload to include this:
+window.addEventListener('load', () => {
+    bootSystem();
+    // (Keep your other window.onload functions here too)
+});
+//allalllalalalalal ENDED
+
+//kuch or alag se alag wala alallalalalal coz isme fluid wala kuch saaman h
+document.addEventListener('click', (e) => {
+    const ripple = document.createElement('div');
+    ripple.className = 'click-ripple';
+    ripple.style.left = `${e.clientX}px`;
+    ripple.style.top = `${e.clientY}px`;
+    document.body.appendChild(ripple);
+    
+    setTimeout(() => ripple.remove(), 600);
+});
+//kuch or alag se alag wala alallalalalal coz isme fluid wala kuch saaman h ENDED
